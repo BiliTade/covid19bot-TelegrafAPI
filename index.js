@@ -4,9 +4,9 @@ const axios= require('axios');
 const dateFormat=require('dateformat');
 const express= require('express');
 const expressApp= express();
-const API_TOKEN= process.env.API_TOKEN||'1358489374:AAFV7Rygfsfzv7VHfo6hoBD4clF_z0Lt__I'; // replace with your telegram bot Token
+const API_TOKEN= process.env.API_TOKEN||'Your_Telegram_bot_token'; // replace with your telegram bot Token
 const PORT= process.env.PORT || 5000;  
-const URL= process.env.URL||'https://thawing-retreat-99902.herokuapp.com'; // replace it with your APP URL Domain given when you create heroku app
+const URL= process.env.URL||'https://your_app_id.herokuapp.com'; // replace it with your APP URL Domain given when you create heroku app
 const bot = new Telegraf( API_TOKEN);
 bot.telegram.setWebhook(`${URL}/bot${API_TOKEN}`);
 expressApp.use(bot.webhookCallback(`/bot${API_TOKEN}`));
