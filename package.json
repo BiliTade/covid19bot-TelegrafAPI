@@ -1,0 +1,23 @@
+{
+  "name": "telegrambot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"index.js"
+  },
+  "engines":{
+   "node":"12.19.0",
+   "npm":"6.14.8"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "dateformat": "^3.0.3",
+    "express": "^4.17.1",
+    "telegraf": "^3.38.0"
+  }
+}
